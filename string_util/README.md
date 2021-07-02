@@ -38,7 +38,7 @@ dependencies:
 ## Import
 
 ```dart
-import 'package:dial_code_picker/dial_code_picker.dart';
+import 'package:string_util/string_util.dart';
 ```
 
 ## Usage
