@@ -29,6 +29,6 @@ class _HomeState extends State<Home> {
   }
 
   void _check() {
-    print('is Is'.countMatchesIgnoreCase('is'));
+    print(null.hasSpecialCharacters);
   }
 }

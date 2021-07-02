@@ -136,3 +136,23 @@ var count = 'This is example'.countMatchesIgnoreCase('example'); =>1
 var count = 'This is example with two example'.countMatchesIgnoreCase('example'); =>2
 var count = 'This is example with two Example'.countMatchesIgnoreCase('example'); =>2
 ```
+
+**initials**
+```dart
+var data = null.initials; =>'';
+var data = ''.initials; =>'';
+var data = 'null'.initials; =>N;
+var data = 'Deepak'.initials; =>D;
+var data = 'Deepak Gupta'.initials; =>DG;
+var data = 'deepak gupta'.initials; =>DG;
+```
+
+**hasSpecialCharacters**
+```dart
+var has =null.hasSpecialCharacters            =>   false;
+var has =''.hasSpecialCharacters              =>   false;
+var has ='a'.hasSpecialCharacters             =>   false;
+var has ='Ab12'.hasSpecialCharacters          =>   false;
+var has ='@deepak'.hasSpecialCharacters       =>   true;
+var has ='#deepak'.hasSpecialCharacters       =>   true;
+```

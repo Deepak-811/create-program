@@ -229,4 +229,38 @@ extension StringExtension on String {
       return count;
     }
   }
+
+  ///get the initials of each word  [initials]
+  ///eg.
+  /// var data = null.initials; =>'';
+  /// var data = ''.initials; =>'';
+  /// var data = 'null'.initials; =>N;
+  /// var data = 'Deepak'.initials; =>D;
+  /// var data = 'Deepak Gupta'.initials; =>DG;
+  /// var data = 'deepak gupta'.initials; =>DG;
+  String get initials{
+    if (this == null || this.length == 0)
+      return '';
+    else{
+      var init ='';
+      this.split(' ').forEach((element) {
+        init+=element[0].toUpperCase();
+      });
+      return init;
+    }
+  }
+
+  ///check whether your string  has special character or not [hasSpecialCharacters]
+  ///eg.
+  ///var has =null.hasSpecialCharacters            =>   false;
+  ///var has =''.hasSpecialCharacters              =>   false;
+  ///var has ='a'.hasSpecialCharacters             =>   false;
+  ///var has ='Ab12'.hasSpecialCharacters          =>   false;
+  ///var has ='@deepak'.hasSpecialCharacters       =>   true;
+  ///var has ='#deepak'.hasSpecialCharacters       =>   true;
+  bool get hasSpecialCharacters {
+    if (this == null || this.length == 0)
+      return false;
+    else return new RegExp(r'[!@#$%^&*(),.?":{}|<>]').hasMatch(this);
+  }
 }

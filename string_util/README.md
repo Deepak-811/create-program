@@ -1,6 +1,6 @@
 # String Util
 
-![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)    ![](https://img.shields.io/badge/pub-0.0.1-success)
+![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)    ![](https://img.shields.io/badge/pub-0.0.2-success)
 
 A new Flutter package string util with common regex use cases. removing whitespace, is valid url, valid email, alphanumeric and more.
 
@@ -25,6 +25,8 @@ The String Util defines certain words related to String handling.A pure dart pac
 - isEqualIgnoreCase(other)
 - countMatches(other)
 - countMatchesIgnoreCase(other)
+- initials
+- hasSpecialCharacters
 
 ## Installation
 
@@ -171,6 +173,27 @@ var count = 'This is example'.countMatchesIgnoreCase('example'); =>1
 var count = 'This is example with two example'.countMatchesIgnoreCase('example'); =>2
 var count = 'This is example with two Example'.countMatchesIgnoreCase('example'); =>2
 ```
+
+**initials**
+```dart
+var data = null.initials; =>'';
+var data = ''.initials; =>'';
+var data = 'null'.initials; =>N;
+var data = 'Deepak'.initials; =>D;
+var data = 'Deepak Gupta'.initials; =>DG;
+var data = 'deepak gupta'.initials; =>DG;
+```
+
+**hasSpecialCharacters**
+```dart
+var has =null.hasSpecialCharacters            =>   false;
+var has =''.hasSpecialCharacters              =>   false;
+var has ='a'.hasSpecialCharacters             =>   false;
+var has ='Ab12'.hasSpecialCharacters          =>   false;
+var has ='@deepak'.hasSpecialCharacters       =>   true;
+var has ='#deepak'.hasSpecialCharacters       =>   true;
+```
+
 
 ## Bugs/Requests
 
