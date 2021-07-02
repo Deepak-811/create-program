@@ -1,45 +1,10 @@
 # String Util
 
-![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)    ![](https://img.shields.io/badge/pub-0.0.1-success)
 
 A new Flutter package string util with common regex use cases. removing whitespace, is valid url, valid email, alphanumeric and more.
 
 The String Util defines certain words related to String handling.A pure dart package.
 
-
-
-## Features
-
-- upperCase
-- capitalizeFirsWord
-- capitalizeFirsWordOfEach
-- lowerCase
-- removeBlankSpace
-- isNumeric
-- isAlphaNumeric
-- containLowerCase
-- containUpperCase
-- isEmail
-- isUrl
-- isEqual(other)
-- isEqualIgnoreCase(other)
-- countMatches(other)
-- countMatchesIgnoreCase(other)
-
-## Installation
-
-Install the dependencies.
-
-```dart
-dependencies:
-    string_util: latest-version
-```
-
-## Import
-
-```dart
-import 'package:dial_code_picker/dial_code_picker.dart';
-```
 
 ## Usage
 
@@ -171,29 +136,3 @@ var count = 'This is example'.countMatchesIgnoreCase('example'); =>1
 var count = 'This is example with two example'.countMatchesIgnoreCase('example'); =>2
 var count = 'This is example with two Example'.countMatchesIgnoreCase('example'); =>2
 ```
-
-## Bugs/Requests
-
-If you encounter any problems please open an issue. If you feel the library is missing a feature, please raise a ticket on Github and we'll look into it.
-
-
-## License
-
-MIT License
-
-Copyright (c) 2021 Deepak Gupta
-
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions :
-
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-
-
-

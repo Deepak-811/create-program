@@ -1,5 +1,5 @@
 name: string_util
-description: A new Flutter package string utility with common regex use cases. removing whitespace, is valid url, valid email, aphanumeric.
+description: A new Flutter package string util with common regex use cases. removing whitespace, is valid url, valid email, alphanumeric and more.
 version: 0.0.1
 homepage: ''
 
